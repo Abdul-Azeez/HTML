@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+  <head lang="en">
     <meta charset="UTF-8">
 
     <title>HTML form excercise</title>
-</head>
-<h1 text align="center">HTML form exercise</h1>
+  </head>
 
-<body>
-<font color="red">Please Note.</font> This example demonstrate how Html forms can be used. Submit button should
-submit the button and reset button should reset the forms(revert the changes in the form field.)
-The form layout should be same as below.
+  <body >
+    <h1 text align="center">HTML form exercise</h1>
+    <font color="red">Please Note.</font> This example demonstrate how Html forms can be used. Submit button should
+    submit the button and reset button should reset the forms(revert the changes in the form field.)
+    The form layout should be same as below.
 
-<h4>Contact Form</h4>
-<form>
-    <label style="width:100px"></label><br>
-    <label>Your name</label><input type="text" name ="Name" width="100"><br>
-<label style="width:100px">Email</label><input type="text" align="right" name = "Email" width="100"> <br>
-<label width = "100">Phone number</label><input type="text"><br>
-    Website <input type="text" value="http://"> <br>
-    Comments*.<br><textarea></textarea>
-<h4>Text field</h4>
-Your name*.<input type="text" ><br>
-<h4>Password field</h4><br>
-Password*.<input type="password">
-</form>
-<h4>Radio buttons</h4>
-Do you like pizza?<br>
-<form action="">
-    <input type="radio" name="yes" value="yes">Yes<br>
-    <input type="radio" name="no" value="no">No<br>
-    <input type="radio" name="maybe" value="Maybe">Maybe<br>
-    <input type="radio" name="nevertired" value="nevertired">Never tired
-</form>
-<h4>Check Box</h4>
-<input type="checkbox"> Check this box if u like our service
-<h4>Text area</h4>
-<p>
-Anything you would like to say?</p>
-<textarea> </textarea>
+    <h4>Contact Form</h4>
 
-<h4>I Like</h4>
-<textarea>mushroom  greenpeeppers  onions  tomatoes  Olives</textarea>
+    <form action="" method="POST">
+        <label style="width:100px"></label><br>
+        <label for="name">Your name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name ="Name"id="name"><br>
+        <label for="email">Email</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" align="right" name = "email" width="100" id="email"> <br>
+        <label for="phone">Phone number</label>
+          <input type="text" id="phone"><br>
+        <label for="website"> Website </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" value="http://" id ="website"> <br>
+        <label for="comments">Comments*.<br>
+          <textarea id="comments"></textarea>
+          <h4>Text field</h4>
+        <label for="yourname">Your name*.
+          <input type="text" id="yourname" ><br>
+          <h4>Password field</h4>
+          <br>
+        <label for="password">Password*.
+          <input type="password" id ="password">
 
-<h4>Menu </h4>
-Your favourite color:
-<select>
-    <option value="Red">Red</option>
-    <option value="Blue">Blue</option>
-    <option value="Pink">Pink</option>
-    <option value="Yellow">Yellow</option>
-</select>>
-<h4>Attach file</h4>
-<input type="file">
+          <h4>Radio buttons</h4>
+          Do you like pizza?<br>
 
-<h4>Buttons</h4>
-<form action="" method="POST">
-<input type="submit" value="Submit"> <input type="reset" value="Reset!">
+        <input type="radio" name="radio" value="yes" id="yes">  <label for="yes">Yes</label> <br>
+        <input type="radio" name="radio" value="no" id="no"><label for="no">No</label><br>
+        <input type="radio" name="radio" value="Maybe" id="maybe"><label for="maybe">maybe</label><br>
+        <input type="radio" name="radio" value="nevertired" id = "never"><label for="never">Never tired</label>
 
-</form>
+        <h4> Check Box</h4>
+          <input type="checkbox" id ="checkbox"> <label for="checkbox"> Check this box if u like our service</label>
+        <h4>Text area</h4>
+        <p> <label for="anything">Anything you would like to say?</label></p>
+        <textarea id="anything"> </textarea>
 
+        <h4>I Like</h4>
+        <textarea>mushroom  greenpeeppers  onions  tomatoes  Olives</textarea>
 
-</body>
+        <h4>Menu </h4>
+        Your favourite color:
+        <select>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Pink">Pink</option>
+            <option value="Yellow">Yellow</option>
+        </select>
+        <h4>Attach file</h4>
+        <input type="file">
+
+        <h4>Buttons</h4>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset!">
+
+    </form>
+
+  </body>
 
 </html>
